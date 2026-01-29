@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="interface">
+        <h1>Weather App</h1>
+        <form id="user-city">
+            <input type="text" id="city" placeholder="Enter city name" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="prompt">Search your city to see the weather details.</div>
+        <div class="error" id="error"></div>
+        <div class="inner-content">
+            <h2 id="city-name">--</h2>
+            <p id="district">--</p>
+            <p id="local-time">Local time: --:--</p>
+            <img id="img" src="https://uxwing.com/wp-content/themes/uxwing/download/weather/weather-icon.png"
+                alt="Weather Icon">
+            <h1 id="calcius">--°C</h1>
+            <p id="weather">--</p>
+        </div>
+        <div class="footer">
+            <div><b>Feels Like</b><span id="feelsLike">--°C</span></div>
+            <div><b>Humidity</b><span id="humidity">--%</span></div>
+            <div><b>Wind Speed</b><span id="windSpeed">-- km/h</span></div>
+            <div><b>Visibility</b><span id="visibility">-- km</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
